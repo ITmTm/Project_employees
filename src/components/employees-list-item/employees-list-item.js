@@ -1,7 +1,7 @@
 import './employees-list-item.css';
 import {Component} from "react";
 
-class EmployeesListItem extends Component{
+class EmployeesListItem extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
