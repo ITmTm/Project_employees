@@ -37,6 +37,7 @@ class EmployeesAddForm extends Component {
 					onSubmit={this.onSubmit}>
 					<input
 						type="text"
+						required minLength='3'
 						className='form-control new-post-label'
 						name='name'
 						value={name}
@@ -46,6 +47,7 @@ class EmployeesAddForm extends Component {
 
 					<input
 						type="number"
+						required minLength='3'
 						className='form-control new-post-label'
 						name='salary'
 						value={salary}
