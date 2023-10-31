@@ -3,7 +3,7 @@ import './employees-list-item.css';
 
 const EmployeesListItem = (props) => {
 
-	const {name, salary, onDelete, onToggleProp, increase, like} = props;
+	const {name, salary, onDelete, onToggleProp, increase, rise} = props;
 
 	let classNames = 'list-group-item d-flex justify-content-between';
 
@@ -11,7 +11,7 @@ const EmployeesListItem = (props) => {
 		classNames += ' increase';
 	}
 
-	if (like) {
+	if (rise) {
 		classNames += ' like';
 	}
 
@@ -29,7 +29,7 @@ const EmployeesListItem = (props) => {
 			<div className='d-flex justify-content-center align-items-center'>
 				<button
 					type='button'
-					className='btn-cookie btn-sm'
+					className='btn-cookie btn-sm '
 					onClick={onToggleProp}
 					data-toggle='increase'>
 					<i className='fas fa-cookie'></i>
@@ -37,7 +37,7 @@ const EmployeesListItem = (props) => {
 
 				<button
 					type='button'
-					className='btn-trash btn-sm'
+					className='btn-trash btn-sm '
 					onClick={onDelete}>
 					<i className='fas fa-trash'></i>
 				</button>
